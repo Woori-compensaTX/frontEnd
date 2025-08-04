@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+
+/* Main */
+
+.account-box {
+  margin: 0 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bank {
+  font-weight: bold;
+  font-size: 16px;
+  color: #444;
+}
+
+.account {
+  color: #d81b60;
+  font-weight: 600;
+}
+
+.available {
+  font-size: 14px;
+  color: #666;
+}
+
+.dropdown {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 16px;
+  color: #888;
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  /* padding: 20px; */
+  background: white;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-section {
+  padding: 0 20px;
+  /* text-align: center; */
+}
+
+.label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  bottom: 20px;
+  width: 100%;
+  background: #1d5cff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  max-width: 368px;
+}
+
+/* Sub buy/sal */
+.container {
+  padding: 20px;
+  padding-bottom: 100px;
+  background: #fff;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.currency-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.currency-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.flag {
+  width: 20px;
+  height: 14px;
+}
+
+.currency-box input {
+  border: none;
+  background: transparent;
+  text-align: right;
+  font-size: 16px;
+  width: 100%;
+}
+
+.readonly {
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.next-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 368px;
+  padding: 20px 0;
+}
+
+.next-button * {
+  background: #1d5cff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width : 368px) {
+  .container {
+    padding: 20px;
+  }
+
+  .next-button {
+    padding: 20px;
+  }
+}
+
+/* ========================== */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #3182f6;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
